@@ -2,14 +2,14 @@
 ## Summary
 
 Dalam materi ini point yang dipelajari adalah:
-1. Tentang Version Control System (VCS)
+1. Tentang Versioning dan Version Control System (VCS)
 2. Perintah-perintah dan file yang ada di Git
 3. Pengertian workflow dan cara optimalisasi workflow yang baik
 
-### Tentang Version Control System (VCS)
-VCS terdiri dari 3 versi yaitu:\
+### Tentang Versioning dan Version Control System (VCS)
+Versioning adalah mengatur versi dari source code program pada sebuah project. Dalam versioning terdapat 3 tools, yaitu _Version Control System (VCS)_, _Source Code Manager (SCM)_, dan _Revision Control System (RCS)_. Tool yang sering banyak digunakan adalah _VCS_. _VCS_ terdiri dari 3 versi yaitu:\
 **a. Single User**\
-_Single user_ dikembangkan _Unix_ untuk memanajemen sebuah yang masih bersifat localized. Versi ini masih menggunakan komputer untuk memanajemen OS yang bersifat _Unix_ dengan SCCS atau RCS dalam artian memanajemen projek yang berbasis local, jadi antara komputer satu sama lain masih belum terhubung. Tetapi sudah terlacak di local.\
+_Single user_ mengembangkan _Unix_ untuk memanajemen sebuah tugas yang masih bersifat localized. Versi ini masih menggunakan komputer untuk memanajemen OS yang bersifat _Unix_ dengan SCCS atau RCS dalam artian memanajemen projek yang berbasis local, jadi antara komputer satu sama lain masih belum terhubung. Tetapi sudah terlacak di local.\
 **b. Centralized**\
 Pada _centralized_ terdapat CVS, Perforce, Subversion, dan Microsoft Team Foundation Server. Versi ini sudah mempunyai _server_ pusat. Pada saat developer menggunakan _centralized_, kemudian servernya mati. Maka, developer tidak bisa menggunakannya lagi karena dalam pengambilan data yang dilakukan developer langsung mengambil datanya dari server pusat, sehingga jika server mati data tidak bisa diambil.\
 **c. Distributed**\
@@ -45,7 +45,7 @@ Perintah-perintah yang ada di Git dapat dikategorikan sebagai berikut:
    - Perintah git log --oneline\
      Perintah ini digunakan untuk melihat perubahan hanya dalam satu line.
    - Perintah git reset\
-     Perintah ini digunakan untuk mengembalikan sebuah perubahan ke titik tertentu. Dalam perintah _git reset_ terdapat dua jenis yaitu _--soft_ dan _--hard_. _--soft_      artinya ketika ingin kembali ke suatu titik, perubahan yang dilakukan akan tetap terlacak dan ada di staging area, sedangkan _--hard_ artinya ketika ingin              kembali ke suatu titik, perubahan yang dilakukan akan hilang dati staging area.
+     Perintah ini digunakan untuk mengembalikan sebuah perubahan ke titik tertentu. Dalam perintah _git reset_ terdapat dua jenis yaitu _--soft_ dan _--hard_. _--soft_      artinya ketika ingin kembali ke suatu titik, perubahan yang dilakukan akan tetap terlacak dan ada di staging area, sedangkan _--hard_ artinya ketika ingin kembali ke suatu titik, perubahan yang dilakukan akan hilang dari staging area.
  4. **Syncing**
     - Perintah git push\
       Perintah ini digunakan untuk mengirimkan file ke _git server_.
@@ -70,8 +70,8 @@ Perintah-perintah yang ada di Git dapat dikategorikan sebagai berikut:
       Perintah ini dapat dilakukan secara langsung di github yang digunakan untuk melakukan kontribusi pada repository yang diinginkan.
 
 ### Pengertian workflow dan cara optimalisasi workflow yang baik
-Workflow adalah alur dari penggunaan Git pada Github atau Gitlab.\
-Cara optimalisasi workflow yang baik adalah dengan adanya _branch master_ yang digunakan untuk sisi _production_. Terdapat juga _branch develop_ yang digunakan untuk penggabungan dan pengembangan, pengambilan titik dari setiap feature bukan diambil dari _branch master_, tetapi diambil dari _branch develop_, misalnya _featureA_ dan _featureB_. Kemudian, dimasukkan lagi ke _branch develop_. Untuk melakukan coding tidak dilakukan di _branch develop_, tetapi di _branch featuare_. Jika dari _branch develop_ sudah pasti, selanjutnya dimasukkan ke _branch master_. 
+_Workflow_ adalah alur dari penggunaan Git pada **Github** atau **Gitlab**.\
+Cara optimalisasi _workflow_ yang baik adalah dengan adanya _branch master_ yang digunakan untuk sisi _production_. Terdapat juga _branch develop_ yang digunakan untuk penggabungan dan pengembangan, pengambilan titik dari setiap feature bukan diambil dari _branch master_, tetapi diambil dari _branch develop_, misalnya _featureA_ dan _featureB_. Kemudian, dimasukkan lagi ke _branch develop_. Untuk melakukan coding tidak dilakukan di _branch develop_, tetapi di _branch featuare_. Jika dari _branch develop_ sudah pasti, selanjutnya dimasukkan ke _branch master_. 
 
 
 ## Tugas
@@ -81,5 +81,6 @@ Pada tugas ini, membuat 4 _branch_ yaitu _branch master_, _develop_, _featureOne
 Berikut adalah link repository github pengumpulan tugas praktikum git:\
 [Tugas Praktikum Git](https://github.com/Bimahayunugraha/react_bima-hayu-nugraha_praktikum-git)
 
-Screenshot dari hasil insight network:\
-![screenshot](./screenshots/screenshot.png)
+Screenshot dari hasil insight network:
+
+![screenshot](./screenshots/screenshots.png)
