@@ -30,3 +30,9 @@ Figma adalah **editor grafik vektor dan alat prototyping** berbasis _web_ dengan
 -	`Project within team` yaitu _project_ yang dikerjakan bersama dengan _team_ atau kolaborasi
 -	`Create new team` untuk membuat _team_ baru
 
+## Task
+### 1. Melakukan analisis dari contoh soal kode desain figma
+Pada tugas ini yaitu melakukan analisis pada desain _button_ dan ukuran _card_ dari kode desain figma yang diberikan.
+
+Berikut adalah hasil analisis saya:\
+[praktikum.md](./praktikum/praktikum.md)
