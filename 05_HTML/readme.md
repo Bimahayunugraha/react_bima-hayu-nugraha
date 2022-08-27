@@ -49,6 +49,7 @@ Berikut adalah _tag_ yang ada pada HTML:
 Terdapat dua jenis list dalam _HTML_ yaitu:
 1.	**Ordered List** adalah list yang berurutan dengan menggunakan _tag_ (`<ol`).
 2.	**Unordered List** adalah list yang tidak berurutan dengan menggunakan _tag_ (`<ul>`).
+
 Setiap item pada **Ordered List** dan **Undordered List** di deklarasikan menggunakan _tag_ `<li>`.
 
 ## Task
