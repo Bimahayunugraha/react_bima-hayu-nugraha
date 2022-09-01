@@ -1,0 +1,190 @@
+/* Import Font Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+/* Root */
+:root {
+	/* Colors */
+	--main-color: #9e9e9e;
+	--second-color: #888f9b;
+	--third-color: #71c55d;
+	--color-default: #212529;
+	--container-color: #ffffff;
+
+	/* Background Color */
+	--footer-background-color: #2a2c30;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+	max-width: 1120px;
+}
+
+/* CSS Navbar */
+.nav-layout {
+	box-shadow: 0 1px 0 rgba(22, 8, 43, 0.1);
+	background-color: var(--container-color);
+}
+
+.nav-logo {
+	letter-spacing: 2px;
+	font-size: 1.5rem;
+}
+
+.nav-logo span {
+	color: goldenrod;
+}
+
+.nav-name {
+	color: var(--color-default);
+}
+
+/* CSS Main */
+.main-body {
+	padding: 3rem 0;
+}
+
+/* CSS Hero */
+.hero {
+	padding-top: 110px;
+}
+
+.hero-title {
+	font-family: "Roboto", sans-serif;
+}
+
+/* CSS Features */
+.features {
+	padding-bottom: 120px;
+}
+
+.title-feature-1,
+.title-feature-2,
+.title-feature-3 {
+	font-size: 0.8rem;
+	letter-spacing: 2px;
+}
+
+.description-feature-1,
+.description-feature-2,
+.description-feature-3 {
+	font-size: 0.8rem;
+}
+
+.read-more {
+	font-size: 0.8rem;
+	color: var(--second-color);
+	letter-spacing: 2px;
+}
+
+/* CSS About */
+.about-title {
+	font-size: 2.5rem;
+	letter-spacing: 2px;
+}
+
+.about-description {
+	line-height: 2;
+}
+
+.about-lists {
+	letter-spacing: 1px;
+}
+
+.about-list li:before {
+	content: "\F285";
+	font-family: "bootstrap-icons";
+}
+
+/* CSS Footer */
+.foot {
+	background-color: var(--footer-background-color);
+}
+
+.footer-description-title {
+	letter-spacing: 4px;
+	font-weight: 400;
+	font-family: serif;
+}
+
+.footer-description-content {
+	font-size: 0.8rem;
+	font-weight: 100;
+	letter-spacing: 1px;
+}
+
+.footer-text {
+	font-size: 0.9rem;
+	letter-spacing: 2px;
+}
+
+.footer-links {
+	font-size: 0.8rem;
+}
+
+/* CSS Copyright */
+.copyright {
+	font-size: 0.9rem;
+}
+
+.copy-link {
+	color: green;
+}
+
+.copy-text {
+	font-size: 0.92rem;
+}
+
+/* CSS Scrolling To Top*/
+.scrolling-container {
+	position: fixed;
+	bottom: 5%;
+	right: 1%;
+	padding: 2px 8px;
+	background-color: var(--third-color);
+	border-radius: 5px;
+	overflow: hidden;
+	text-align: center;
+	transition: 0.5s;
+	visibility: hidden;
+	opacity: 0;
+}
+.scrolling-container a {
+	color: var(--container-color);
+}
+.scrolling-container:hover a {
+	color: var(--container-color);
+	text-decoration: none;
+}
+.scrolling-container.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Responsive Media Queries For Handphone */
+@media screen and (max-width: 768px) {
+	.about-title {
+		font-size: 1.5rem;
+	}
+
+	.about-description {
+		font-size: 0.8rem;
+	}
+
+	.about-list {
+		font-size: 0.8rem;
+	}
+
+	.scrolling-container {
+		bottom: 4%;
+		right: 2%;
+	}
+}
