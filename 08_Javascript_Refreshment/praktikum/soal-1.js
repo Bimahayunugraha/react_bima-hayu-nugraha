@@ -1,9 +1,9 @@
-var a = 5;
+let a = 5;
 let b = "kampus merdeka";
 const nama = "Budi";
 let terdaftar = true;
-let lengkap_arr = [a, b, nama, terdaftar];
-let index2 = lengkap_arr[2];
+let lengkapArr = [a, b, nama, terdaftar];
+let index2 = lengkapArr[2];
 
 function perkenalan() {
 	let asal = "Indonesia";
@@ -24,7 +24,7 @@ if (terdaftar === true) {
 }
 
 a = b;
-// nama = b;
+// nama = b; // Melakukan komen pada code ini agar tidak terjadi error saat program dijalankan
 
 console.log("array = " + index2);
 console.log("a adalah = " + a);
