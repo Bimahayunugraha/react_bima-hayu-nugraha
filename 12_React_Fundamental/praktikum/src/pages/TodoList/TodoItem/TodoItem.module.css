@@ -1,0 +1,4 @@
+.todoCompletedTrue {
+	display: flex;
+	text-decoration: line-through;
+}
