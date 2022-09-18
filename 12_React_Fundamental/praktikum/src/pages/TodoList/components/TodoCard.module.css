@@ -1,0 +1,13 @@
+.todoCard {
+	display: inline-block;
+	border-radius: 25px;
+	padding: 10px 15px 10px 15px;
+	border: 2px solid var(--main-border-color);
+	color: var(--main-font-color);
+	margin: 5px 30px;
+}
+
+.todoListItem {
+	font-size: 15px;
+	font-weight: 400;
+}
