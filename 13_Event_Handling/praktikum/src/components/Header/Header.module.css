@@ -1,0 +1,6 @@
+.textHeader {
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(90deg, var(--secondary-background-color) 25%, var(--tertitary-background-color) 90%);
+}
