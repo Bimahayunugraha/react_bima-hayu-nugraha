@@ -190,3 +190,127 @@ class Test extends Component {
 
 export default Test;
 ```
+
+## Task
+
+### 1. Membuat sebuah daftar pekerjaan yang akan dilakukan
+
+Pada tugas ini yaitu membuat sebuah daftar pekerjaan yang akan saya lakukan dengan kriteria sebagai berikut:
+
+1. Daftar pekerjaan dapat ditambahkan menggunakan inputan.
+2. Terdapat checklist pada setiap daftar pekerjaan.
+3. Aktifkan checklist jika pekerjaan selesai dikerjakan.
+4. Sertakan tombol hapus untuk menghapus suatu pekerjaan dari daftar pekerjaan.
+5. Apabila inputan yang disubmit tersebut kosong, tampilkan alert bahwa harus mengisi inputan tersebut terlebih dahulu sebelum melakukan submit.
+
+(\*) Kerapihan dan inovasi menjadi suatu nilai tambah.
+
+Note: Pada tugas ini saya melakukan inovasi dengan menambahkan beberapa fitur yaitu alert saat ingin menghapus salah satu data, tampilan saat data todo kosong, informasi total semua todo, informasi total todo yang sudah di selesaikan, informasi total todo yang belum diselesaikan, menghapus semua data, dan alert saat ingin menghapus semua data.
+
+Berikut untuk link soal lebih lengkapnya:
+
+[soal-praktikum-event-handling](https://docs.google.com/document/d/1cjjWtsrlI3KNonkYoM90xqYgr4dCwZK83jHwaXRVeNk/edit)
+
+#### Fitur Utama
+
+##### Tampilan Awal Aplikasi
+
+Berikut adalah _source code_ dari tampilan awal aplikasi daftar tugas atau todo list:
+
+[source-code](https://github.com/Bimahayunugraha/react_bima-hayu-nugraha/tree/13_Event_Handling/13_Event_Handling/praktikum)
+
+Berikut adalah hasil _output_ dari tampilan awal aplikasi daftar tugas atau todo list:
+
+![tampilan-awal](./screenshots/01_tampilan-awal.png)
+
+##### Tampilan alert saat ingin melakukan submit, tetapi inputan kosong
+
+Berikut adalah _source code_ dari tampilan alert saat ingin melakukan submit, tetapi inputan kosong:
+
+[source-code](./praktikum/src/pages/Todo/Todo.jsx)
+
+Berikut adalah hasil _output_ dari tampilan alert saat ingin melakukan submit, tetapi inputan kosong:
+
+![alert-submit-input-kosong](./screenshots/02_alert-saat-submit-input-kosong.png)
+
+##### Tampilan menambahkan data daftar pekerjaan
+
+Berikut adalah _source code_ dari tampilan menambahkan data daftar pekerjaan:
+
+[source-code-1](./praktikum/src/pages/components/TodoInput/TodoInput.jsx)
+
+[source-code-2](./praktikum/src/pages/Todo/Todo.jsx)
+
+Berikut adalah hasil _output_ dari tampilan menambahkan data daftar pekerjaan:
+
+![menambahkan-data-daftar-pekerjaan](./screenshots/05_menambahkan-data.png)
+
+##### Tampilan mengaktifkan checklist saat pekerjaan selesai dikerjakan
+
+Berikut adalah _source code_ dari tampilan mengaktifkan checklist saat pekerjaan selesai dikerjakan:
+
+[source-code-1](./praktikum/src/pages/components/TodoList/TodoList.jsx)
+
+[source-code-2](./praktikum/src/pages/Todo/Todo.jsx)
+
+Berikut adalah hasil _output_ dari tampilan mengaktifkan checklist saat pekerjaan selesai dikerjakan:
+
+![mengaktifkan-checklist-pada-pekerjaan-yang-diselesaikan](./screenshots/06_checklist-data.png)
+
+##### Tampilan saat data sudah terhapus
+
+Berikut adalah _source code_ dari tampilan saat data sudah terhapus:
+
+[source-code-1](./praktikum/src/pages/components/TodoList/TodoList.jsx)
+
+[source-code-2](./praktikum/src/pages/Todo/Todo.jsx)
+
+Berikut adalah hasil _output_ dari tampilan saat data sudah terhapus:
+
+![setelah-data-sudah-terhapus](./screenshots/04_setelah-data-terhapus.png)
+
+#### Fitur Tambahan
+
+##### Tampilan alert saat ingin menghapus salah satu data
+
+Berikut adalah _source code_ dari tampilan alert saat ingin menghapus salah satu data:
+
+[source-code](./praktikum/src/pages/components/TodoList/TodoList.jsx)
+
+Berikut adalah hasil _output_ dari tampilan alert saat ingin menghapus salah satu data:
+
+![alert-saat-ingin-menghapus-salah-satu-data](./screenshots/03_tambahan-alert-saat-hapus-data.png)
+
+##### Tampilan info todo
+
+Berikut adalah _source code_ dari tampilan info todo:
+
+[source-code-1](./praktikum/src/pages/components/InfoTodo/InfoTodo.jsx)
+
+[source-code-2](./praktikum/src/pages/Todo/Todo.jsx)
+
+Berikut adalah hasil _output_ dari tampilan info todo:
+
+![info-todo](./screenshots/07_tambahan-info-todo.png)
+
+##### Tampilan alert saat ingin menghapus semua data
+
+Berikut adalah _source code_ dari tampilan alert saat ingin menghapus semua data:
+
+[source-code](./praktikum/src/pages/components/InfoTodo/InfoTodo.jsx)
+
+Berikut adalah hasil _output_ dari tampilan alert saat ingin menghapus semua data:
+
+![alert-saat-ingin-menghapus-semua-data](./screenshots/08_tambahan-alert-hapus-semua-data.png)
+
+##### Tampilan saat data daftar pekerjaan kosong
+
+Berikut adalah _source code_ dari tampilan saat data daftar pekerjaan kosong:
+
+[source-code-1](./praktikum/src/pages/components/EmptyTodo/EmptyTodo.jsx)
+
+[source-code-2](./praktikum/src/pages/Todo/Todo.jsx)
+
+Berikut adalah hasil _output_ dari tampilan saat data daftar pekerjaan kosong:
+
+![data-daftar-pekerjaan-kosong](./screenshots/09_tambahan-saat-data-kosong.png)
