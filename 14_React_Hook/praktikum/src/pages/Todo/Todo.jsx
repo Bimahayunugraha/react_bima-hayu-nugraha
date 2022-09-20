@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TodoList from "../components/TodoList/TodoList";
 import data from "../../TodoData";
 import TodoInput from "../components/TodoInput/TodoInput";
@@ -8,6 +8,7 @@ import InfoTodo from "../components/InfoTodo/InfoTodo";
 const Todo = () => {
 	const [value, setValue] = useState("");
 	const [todos, setTodos] = useState(data);
+	const [disabled, setDisabled] = useState(true);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -65,6 +66,14 @@ const Todo = () => {
 		setValue(e.target.value);
 	};
 
+	useEffect(() => {
+		if (todos.length > 0) {
+			setDisabled(false);
+		} else {
+			setDisabled(true);
+		}
+	}, [todos]);
+
 	return (
 		<>
 			<TodoInput handleSubmit={handleSubmit} handleChange={handleChange} value={value} />
@@ -75,7 +84,7 @@ const Todo = () => {
 				deleteAllTodo={handleDeleteAllTodo}
 				totalCompletedCount={getTotalCompletedTodos()}
 				totalUncompletedCount={getTotalUncompletedTodos()}
-				disabled={todos.length === 0}
+				disabled={disabled}
 			/>
 
 			{/* Fitur Tambahan: Jika terdapat data todo, maka akan ditampilkan datanya. Tetapi, jika data todo kosong, maka akan ditampilkan informasi bahwa data kosong */}
