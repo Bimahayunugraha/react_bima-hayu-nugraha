@@ -1,0 +1,15 @@
+.todoInput {
+	box-shadow: var(--main-box-shadow);
+}
+
+input::placeholder {
+	font-size: 0.8rem;
+	font-weight: semibold;
+}
+
+.btnSubmit {
+	border: none;
+	font-size: 0.8rem;
+	background-color: transparent;
+	color: var(--secondary-font-color);
+}

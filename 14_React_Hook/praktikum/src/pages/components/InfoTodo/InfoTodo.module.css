@@ -1,0 +1,12 @@
+.infoTotal {
+	color: var(--main-font-color);
+	font-size: 12px;
+}
+
+.deleteAllBtn {
+	background-color: unset;
+	border: none;
+	padding: unset;
+	font-size: 12px;
+	font-weight: bold;
+}
