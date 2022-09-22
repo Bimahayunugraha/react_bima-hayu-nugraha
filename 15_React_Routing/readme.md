@@ -20,7 +20,7 @@ _**Routes**_ merupakan modul dalam _React_ yang berfungsi untuk melakukan proses
 
 _**Multi Page Application (MPA)**_ atau juga disebut dengan **tradisional web app** adalah jenis aplikasi _website_ dimana perlu memuat ulang seluruh halaman _web_ setiap kali membuat permintaan baru.
 
-##### MPASPA (Single Page Application)
+##### SPA (Single Page Application)
 
 _**Single Page Application (SPA)**_ adalah salah satu jenis aplikasi _website_ dimana hanya ada satu halaman yang menangani semua aktivitas yang terjadi dalam aplikasi tersebut.
 
@@ -210,3 +210,84 @@ function BlogPost() {
 	);
 }
 ```
+
+## Task
+
+### 1. Melanjutkan assignment sebelumnya yaitu daftar pekerjaan pada Section 14 - React Hooks dengan menambahkan routing
+
+Pada tugas ini yaitu melanjutkan assignment sebelumnya yaitu daftar pekerjaan pada Section 14 - React Hooks dengan menambahkan routing, untuk kiterianya adalah sebagai berikut:
+
+1. Buatlah navbar dengan menggunakan link, home dengan path : “/" dan about dengan path "/about".
+
+2. Untuk page about terdapat navbar baru yaitu About App dengan path : “/aabout/about-app"
+   dan About Author dengan path : “/about/about-author".
+
+3. Jika path yang di inputkan tidak ada dalam route yang dibuat, buatlah page not match /
+   not found pada path tersebut
+
+4. Jika link mengarah ke halaman yang sama berikan replace atau redirect agar tidak
+   menambah history baru pada browser (optional, nilai tambah)
+
+5. Icon atau tampilan navbar bebas namun konsep tetap sama
+
+(\*) Kerapihan dan inovasi menjadi suatu nilai tambah
+
+Berikut untuk link soal lebih lengkapnya:
+
+[soal-praktikum-react-routing](https://docs.google.com/document/d/1Ov85LUDh1ttc7BnnQ3DTz_XLMvw1WnQ3A52dE_wmoBw/edit?usp=sharing)
+
+#### Tampilan Awal Aplikasi
+
+Berikut adalah _source code_ dari tampilan awal aplikasi daftar pekerjaan atau todo list:
+
+[source-code](https://github.com/Bimahayunugraha/react_bima-hayu-nugraha/tree/15_React_Routing/15_React_Routing/praktikum/src/pages/Todo)
+
+Berikut adalah hasil _output_ dari tampilan awal aplikasi daftar pekerjaan atau todo list:
+
+![tampilan-awal](./screenshots/01_tampilan-awal.png)
+
+#### Tampilan Saat Navbar Todo Home Collapse
+
+Berikut adalah _source code_ dari tampilan saat navbar home collapse:
+
+[source-code-1](./praktikum/src/components/Partials/Todo/Navbar/Navbar.jsx)
+
+[source-code-2](./praktikum/src/pages/Todo/Todo.jsx)
+
+Berikut adalah hasil _output_ dari tampilan saat navbar home collapse:
+
+![tampilan-navbar-home-collapse](./screenshots/02_navbar-home-collapse.png)
+
+#### Tampilan Halaman About App
+
+Berikut adalah _source code_ dari tampilan halaman about app:
+
+[source-code-1](./praktikum/src/pages/About/components/AboutApp/AboutApp.jsx)
+
+[source-code-2](./praktikum/src/pages/About/About.jsx)
+
+Berikut adalah hasil _output_ dari tampilan halaman about app:
+
+![tampilan-halaman-about-app](./screenshots/03_about-app.png)
+
+#### Tampilan Halaman About Author
+
+Berikut adalah _source code_ dari tampilan halaman about author:
+
+[source-code-1](./praktikum/src/pages/About/components/AboutAuthor/AboutAuthor.jsx)
+
+[source-code-2](./praktikum/src/pages/About/About.jsx)
+
+Berikut adalah hasil _output_ dari tampilan halaman about author:
+
+![tampilan-halaman-about-author](./screenshots/04_about-author.png)
+
+#### Tampilan Halaman Not Found
+
+Berikut adalah _source code_ dari tampilan halaman not found:
+
+[source-code](./praktikum/src/components/NotFound/NotFound.jsx)
+
+Berikut adalah hasil _output_ dari tampilan halaman not found:
+
+![tampilan-halaman-not-found](./screenshots/05_not-found.png)
