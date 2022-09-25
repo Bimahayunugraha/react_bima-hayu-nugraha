@@ -19,7 +19,6 @@ const WebRoutes = () => {
 					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>
-			;
 		</>
 	);
 };
