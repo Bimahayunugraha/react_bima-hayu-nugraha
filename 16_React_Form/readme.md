@@ -455,3 +455,96 @@ Untuk membuat validasi menggunakan _Javascript_ yaitu:
 
 1. **Ketika ada perubahan di _form_**. Pada validasi ini ketika ada perubahan akan mentrigger _event_ `onChange`. Kelebihannya validasi akan cukup _**real-time**_ berdasarkan perubahan data, namun fungsi akan terus dipanggil selama ada perubahan dan dapat dikombinasikan dengan _disabled button_.
 2. **Ketika menekan tombol _submit_**. Pada validasi ini ketika menenkan tombol submit, maka akan mentrigger _event_ `onSubmit`. Kelebihannya validasi cukup satu kali, tetapi **tidak akan _real-time_** dalam memvalidasi _form_.
+
+## Task
+
+### 1. Membuat form pendaftaran untuk peserta coding bootcamp
+
+Pada tugas ini yaitu membuat form pendaftaran untuk peserta coding bootcamp dengan ketentuan sebagai berikut:
+
+1. Field “Nama lengkap" wajib, hanya menerima huruf"
+2. Field “Email" wajib
+3. Field “No Handphone" wajib, panjangnya 9-14 karakter, berupa angka
+4. Field “Latar Belakang Pendidikan" wajib, berupa radio button pilihannya IT dan Non IT
+5. Field “Kelas Koding yang Dipilih" wajib. Pilihannya ada tiga yakni
+   - Coding Backend with Golang
+   - Coding Frontend with ReactJS
+   - Fullstack Developer
+6. Field “Foto Surat Kesungguhan" bersifat wajib.
+7. Field “Harapan Untuk Coding Bootcamp Ini" bersifat opsional
+8. Tombol “Submit" untuk mensubmit data dan mereset form. Bersifat wajib.
+9. Tombol “Reset" untuk mereset form dan mereset pesan error. Bersifat tidak wajib.
+
+Apabila ada error, bisa ditampilkan antara form dan tombol submit. Ketika tombol submit
+ditekan, akan muncul alert baik ketika ada error maupun saat data benar. Utamakan
+fungsionalitasnya. Kerapihan dan inovasi menjadi suatu nilai tambah
+
+Berikut untuk link soal lebih lengkapnya:
+
+[soal-praktikum-react-form](https://docs.google.com/document/d/1OqHWRAtUJUfKeQsdvji8hKolHI2cHMAs4DuCHRZ31Hc/edit?usp=sharing)
+
+#### Tampilan Awal Aplikasi
+
+Berikut adalah _source code_ dari tampilan awal website form pendaftaran peserta coding bootcamp:
+
+[source-code](https://github.com/Bimahayunugraha/react_bima-hayu-nugraha/tree/16_React_Form/16_React_Form/praktikum/src/pages/RegisterForm)
+
+Berikut adalah hasil _output_ dari tampilan awal website form pendaftaran peserta coding bootcamp:
+
+![tampilan-awal](./screenshots/01_tampilan-awal.png)
+
+#### Tampilan Pesan Error Jika Tidak Sesuai Saat Melakukan Input Nama, Email, dan No Handphone
+
+Berikut adalah _source code_ dari tampilan pesan error jika tidak sesuai saat melakukan input nama, email, dan no handphone:
+
+[source-code-1](./praktikum/src/pages/RegisterForm/FormLists/FormLists.jsx)
+
+[source-code-2](./praktikum/src/pages/RegisterForm/Form.jsx)
+
+Berikut adalah hasil _output_ dari tampilan pesan error jika tidak sesuai saat melakukan input nama, email, dan no handphone:
+
+![tampilan-pesan-error-inputan-tidak-sesuai](./screenshots/02_pesan-error-1.png)
+
+#### Tampilan Pesan Error Jika Saat Melakukan Input No Handphone Kurang Dari 9 Karakter
+
+Berikut adalah _source code_ dari tampilan Pesan error jika saat melakukan input no handphone kurang dari 9 karakter:
+
+[source-code-1](./praktikum/src/pages/RegisterForm/FormLists/FormLists.jsx)
+
+[source-code-2](./praktikum/src/pages/RegisterForm/Form.jsx)
+
+Berikut adalah hasil _output_ dari tampilan Pesan error jika saat melakukan input no handphone kurang dari 9 karakter:
+
+![tampilan-pesan-error-input-nohp-kurang-dari-9-karakter](./screenshots/03_pesan-error-2.png)
+
+#### Tampilan Pesan Error Jika Saat Melakukan Input No Handphone Lebih Dari 14 Karakter
+
+Berikut adalah _source code_ dari tampilan Pesan error jika saat melakukan input no handphone lebih dari 14 karakter:
+
+[source-code-1](./praktikum/src/pages/RegisterForm/FormLists/FormLists.jsx)
+
+[source-code-2](./praktikum/src/pages/RegisterForm/Form.jsx)
+
+Berikut adalah hasil _output_ dari tampilan Pesan error jika saat melakukan input no handphone lebih dari 14 karakter:
+
+![tampilan-pesan-error-input-nohp-lebih-dari-14-karakter](./screenshots/04_pesan-error-3.png)
+
+#### Tampilan Alert Jika Data Nama, Email, atau No Handphone Yang Diinputkan Tidak Sesuai
+
+Berikut adalah _source code_ dari tampilan alert jika data nama, email, atau no handphone yang diinputkan tidak sesuai:
+
+[source-code](./praktikum/src/pages/RegisterForm/Form.jsx)
+
+Berikut adalah hasil _output_ dari tampilan alert jika data nama, email, atau no handphone yang diinputkan tidak sesuai:
+
+![alert-error-inputan-tidak-sesuai](./screenshots/05_alert-error-tidak-sesuai.png)
+
+#### Tampilan Alert Jika Data Yang Diinputkan Berhasil Diterima
+
+Berikut adalah _source code_ dari tampilan alert jika data yang diinputkan berhasil diterima:
+
+[source-code](./praktikum/src/pages/RegisterForm/Form.jsx)
+
+Berikut adalah hasil _output_ dari tampilan alert jika data yang diinputkan berhasil diterima:
+
+![alert-sukses](./screenshots/06_alert-sukses.png)
