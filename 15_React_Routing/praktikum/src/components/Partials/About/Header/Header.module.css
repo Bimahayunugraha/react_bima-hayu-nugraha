@@ -1,0 +1,9 @@
+.toggleNavbar {
+	padding-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.toggleNavbar {
+		padding-top: 30px;
+	}
+}

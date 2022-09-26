@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+body {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+:root {
+	/* Background Color */
+	--main-background-color: #f1f3f4;
+	--secondary-background-color: #fcd84a;
+	--tertitary-background-color: #338af3;
+
+	/* Todo Home */
+	--navbar-home-background-color: #3a8b8c;
+	--navbar-link-home-background-color: #9aa2af;
+
+	/* Color */
+	--main-font-color: #212121;
+	--secondary-font-color: #737373;
+	--tertitary-font-color: #ffffff;
+	/* Todo Home */
+	--navbar-link-home-hover-color: #6befcc;
+
+	/* About */
+	--sidebar-link-about-color: #a7a7a7;
+	--sidebar-link-about-hover-color: #374151;
+	--sidebar-link-about-active-color: #2f2f2f;
+
+	/* Box Shadow */
+	--main-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2), 1px 1px 5px 1px rgba(0, 0, 0, 0.06);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}

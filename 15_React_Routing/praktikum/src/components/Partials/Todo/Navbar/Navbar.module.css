@@ -1,0 +1,24 @@
+.offCanvas {
+	background-color: var(--navbar-home-background-color) !important;
+}
+
+.offCanvas a {
+	color: #6befcc;
+}
+
+.offCanvas .active {
+	background-color: var(--navbar-link-home-background-color);
+	color: var(--tertitary-font-color);
+}
+
+.offCanvas a:hover {
+	background-color: var(--navbar-link-home-background-color);
+	color: var(--navbar-link-home-hover-color);
+}
+
+.navbarBrand {
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(90deg, var(--secondary-background-color) 25%, var(--tertitary-background-color) 90%);
+}
