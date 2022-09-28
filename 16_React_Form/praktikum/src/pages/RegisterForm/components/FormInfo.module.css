@@ -1,0 +1,15 @@
+.bgImage {
+	background-image: url("../../../components/assets/img/bg-img.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.title {
+	padding-top: 12rem;
+}
+
+@media (max-width: 768px) {
+	.title {
+		padding: 3rem 0;
+	}
+}

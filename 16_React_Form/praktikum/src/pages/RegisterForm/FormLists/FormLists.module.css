@@ -1,0 +1,28 @@
+.labelNama::after {
+	content: " *";
+}
+
+.labelEmail::after {
+	content: " *";
+}
+
+.labelNoHandphone::after {
+	content: " *";
+}
+
+.labelPendidikan::after {
+	content: " *";
+}
+
+.labelKelas::after {
+	content: " *";
+}
+
+.labelSurat::after {
+	content: " *";
+}
+
+.labelHarapan::after {
+	content: " (opsinal)";
+	font-style: italic;
+}
