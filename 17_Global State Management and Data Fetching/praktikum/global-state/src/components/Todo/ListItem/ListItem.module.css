@@ -1,0 +1,22 @@
+.item {
+	padding-top: 1px;
+	font-weight: 500;
+}
+
+.buttonDelete {
+	background-color: var(--main-background-color);
+	border: none;
+	font-size: 0.8rem;
+	padding: 13px 5px;
+	margin-right: 6px;
+}
+
+.checkedTodo {
+	text-decoration: line-through;
+	font-style: italic;
+	opacity: 30%;
+}
+
+.checkbox {
+	cursor: pointer;
+}
