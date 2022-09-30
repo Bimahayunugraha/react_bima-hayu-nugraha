@@ -320,3 +320,39 @@ fetch("https://example.com/login", {
 	}),
 });
 ```
+
+## Task
+
+### 1. Tugas Global State Management
+
+Pada tugas ini yaitu menambahkan react redux dan redux persist pada assignment sebelumnya (Assignment Todo).
+
+#### Menambahkan React Redux
+
+Berikut adalah _source code_ dari hasil menambahkan react redux:
+
+[source-code](./praktikum/global-state/src/store/todoSlice.js)
+
+Berikut adalah hasil _output_ dari hasil menambahkan react redux:
+
+![tampilan-awal](./screenshots/global-state/01_implementasi-react-redux.png)
+
+#### Menambahkan React Redux
+
+Berikut adalah _source code_ dari hasil menambahkan react redux persist:
+
+[source-code](./praktikum/global-state/src/store/store.js)
+
+Berikut adalah hasil _output_ dari hasil menambahkan react redux persist:
+
+![tampilan-awal](./screenshots/global-state//02_implementasi-react-redux-persist.png)
+
+### 2. Tugas Data Fetching
+
+Pada tugas ini yaitu membuat database dan Restfull API untuk assignment Todo dengan menggunakan Hasura.
+
+**Note : Untuk tugas yang ini belum selesai dikerjakan**
+
+### Berikut untuk link soal lebih lengkapnya:
+
+[soal praktikum global state management and data fetching](https://docs.google.com/document/d/1bILSP0YUa1dWaK77CU5FTeTIYs39F2ewY5uACGT5rlw/edit?usp=sharing)
