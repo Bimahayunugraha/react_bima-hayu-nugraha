@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { handleDeleteTodo, handleCheckTodo } from "../../../store/todoSlice";
+import { handleDeleteTodo, handleCheckTodo } from "../../../store/features/todoSlice";
 
 import style from "./TodoList.module.css";
 import EmptyTodo from "../Empty/Empty";

@@ -2,10 +2,12 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
-import todosSlice from "./todoSlice";
+import todosSlice from "./features/todoSlice";
+import buttonSlice from "./features/buttonSlice";
 
 const reducers = combineReducers({
 	todo: todosSlice,
+	button: buttonSlice,
 });
 
 const persistConfig = {
