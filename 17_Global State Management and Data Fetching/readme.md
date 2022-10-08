@@ -351,7 +351,115 @@ Berikut adalah hasil _output_ dari hasil menambahkan react redux persist:
 
 Pada tugas ini yaitu membuat database dan Restfull API untuk assignment Todo dengan menggunakan Hasura.
 
-**Note : Untuk tugas yang ini belum selesai dikerjakan**
+#### Tampilan saat loading fetching data API
+
+Berikut adalah _source code_ dari tampilan saat loading fetching data API:
+
+[source-code-1](./praktikum/data-fetching/src/apis/todo.api.js)
+
+[source-code-2](./praktikum/data-fetching/src/store/features/todosSlice.js)
+
+[source-code-3](./praktikum/data-fetching/src/components/Loading/Index.jsx)
+
+[source-code-4](./praktikum/data-fetching/src/components/Todo/TodoList/TodoList.jsx)
+
+Berikut adalah hasil _output_ dari tampilan saat loading fetching data API::
+
+![tampilan-loading-fetching-data](./screenshots/data-fetching/01_Tampilan%20saat%20loading%20fetching%20data.png)
+
+#### Tampilan saat berhasil fetching data API
+
+Berikut adalah _source code_ dari tampilan saat berhasil fetching data API:
+
+[source-code-1](./praktikum/data-fetching/src/apis/todo.api.js)
+
+[source-code-2](./praktikum/data-fetching/src/store/features/todosSlice.js)
+
+[source-code-3](./praktikum/data-fetching/src/components/Todo/TodoList/TodoList.jsx)
+
+[source-code-4](./praktikum/data-fetching/src/components/Todo/ListItem/ListItem.jsx)
+
+[source-code-5](./praktikum/data-fetching/src/components/Todo/InfoTodo/InfoTodo.jsx)
+
+Berikut adalah hasil _output_ dari tampilan saat berhasil fetching data API::
+
+![tampilan-berhasil-fetching-data](./screenshots/data-fetching/02_Tampilan%20saat%20berhasil%20fetching%20data.png)
+
+Berikut adalah hasil _output_ dari tampilan network fetching data API::
+
+![tampilan-network-fetching-data](./screenshots/data-fetching/03_Tampilan%20network%20fetch%20api.png)
+
+#### Tampilan saat berhasil menambahkan data
+
+Berikut adalah _source code_ dari tampilan saat berhasil menambahkan data:
+
+[source-code-1](./praktikum/data-fetching/src/apis/todo.api.js)
+
+[source-code-2](./praktikum/data-fetching/src/store/features/todosSlice.js)
+
+[source-code-3](./praktikum/data-fetching/src/components/Todo/TodoInput/TodoInput.jsx)
+
+Berikut adalah hasil _output_ dari tampilan saat berhasil menambahkan data:
+
+![tampilan-berhasil-tambah-data](./screenshots/data-fetching/04_Tampilan%20saat%20berhasil%20menambahkan%20data.png)
+
+Berikut adalah hasil _output_ dari tampilan network data baru berhasil terkirim:
+
+![tampilan-network-tambah-data](./screenshots/data-fetching/05_Tampilan%20network%20data%20baru%20berhasil%20terkirim.png)
+
+#### Tampilan saat berhasil update data
+
+Berikut adalah _source code_ dari tampilan saat berhasil update data:
+
+[source-code-1](./praktikum/data-fetching/src/apis/todo.api.js)
+
+[source-code-2](./praktikum/data-fetching/src/store/features/todosSlice.js)
+
+[source-code-3](./praktikum/data-fetching/src/components/Todo/ListItem/ListItem.jsx)
+
+Berikut adalah hasil _output_ dari tampilan saat berhasil update data:
+
+![tampilan-berhasil-update-data](./screenshots/data-fetching/06_Tampilan%20saat%20berhasil%20update%20data.png)
+
+Berikut adalah hasil _output_ dari tampilan network update data berhasil terkirim:
+
+![tampilan-network-update-data](./screenshots/data-fetching/07_Tampilan%20network%20update%20data%20berhasil%20terkirim.png)
+
+#### Tampilan saat berhasil menghapus salah satu data
+
+Berikut adalah _source code_ dari tampilan saat berhasil menghapus salah satu data:
+
+[source-code-1](./praktikum/data-fetching/src/apis/todo.api.js)
+
+[source-code-2](./praktikum/data-fetching/src/store/features/todosSlice.js)
+
+[source-code-3](./praktikum/data-fetching/src/components/Todo/ListItem/ListItem.jsx)
+
+Berikut adalah hasil _output_ dari tampilan saat berhasil menghapus salah satu data:
+
+![tampilan-berhasil-hapus-salah-satu-data](./screenshots/data-fetching/08_Tampilan%20saat%20berhasil%20menghapus%20salah%20satu%20data.png)
+
+Berikut adalah hasil _output_ dari tampilan network data yang dihapus berhasil terkirim:
+
+![tampilan-network-hapus-salah-satu-data](./screenshots/data-fetching/09_Tampilan%20network%20data%20yang%20dihapus%20berhasil%20terkirim.png)
+
+#### Tampilan saat berhasil menghapus semua data
+
+Berikut adalah _source code_ dari tampilan saat berhasil menghapus semua data:
+
+[source-code-1](./praktikum/data-fetching/src/apis/todo.api.js)
+
+[source-code-2](./praktikum/data-fetching/src/store/features/todosSlice.js)
+
+[source-code-3](./praktikum/data-fetching/src/components/Todo/InfoTodo/InfoTodo.jsx)
+
+Berikut adalah hasil _output_ dari tampilan saat berhasil menghapus semua data:
+
+![tampilan-berhasil-hapus-semua-data](./screenshots/data-fetching/10_Tampilan%20saat%20berhasil%20menghapus%20semua%20data.png)
+
+Berikut adalah hasil _output_ dari tampilan network semua data yang dihapus berhasil terkirim:
+
+![tampilan-network-hapus-semua-data](./screenshots/data-fetching/11_Tampilan%20network%20semua%20data%20yang%20dihapus%20berhasil%20terkirim.png)
 
 ### Berikut untuk link soal lebih lengkapnya:
 
