@@ -1,0 +1,8 @@
+.todoListContainer {
+	height: 55vh;
+}
+
+.todosContainer {
+	overflow: auto;
+	height: 90%;
+}
