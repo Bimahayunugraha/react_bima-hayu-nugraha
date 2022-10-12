@@ -180,3 +180,29 @@ Untuk mengetes _custom hook_ yaitu menggunakan _**React Hooks Testing Library**_
 
 Cra menginstall _React Hooks Testing Library_ adalah dengan menggunakan perintah `npm install -D @testing-library/react-hooks`.
 Untuk dokumentasi dari _React Hooks Testing Library_ adalah [https://react-hooks-testing-library.com/](https://react-hooks-testing-library.com/)
+
+## Task
+
+### 1. Melakukan testing pada source code yang sudah disediakan
+
+Pada tugas ini yaitu membuat file testing dan melakukan testing yang meliputi testing synchronous dengan RTl, testing asynchronous dengan RTL, dan testing dengan custom hook pada source code yang sudah disediakan.
+
+#### Hasil testing
+
+Berikut adalah _source code_ dari hasil semua testing:
+
+[Source Code Testing Pages FormCoding Dengan Synchronous Testing Menggunakan RTL](./praktikum/src/pages/FormCoding/FormCoding.test.jsx)
+
+[Source Code Testing Pages Searc Dengan Handle Asynchronous Testing Menggunakan RTL](./praktikum/src/pages/Search/Search.test.jsx)
+
+[Source Code Testing Components useInputValue Dengan Testing Custom Hooks Menggunakan React Hooks Testing Library](./praktikum/src/components/CustomHook/useInputValue.test.jsx)
+
+Berikut adalah hasil _output_ dari hasil semua testing:
+
+#### Tampilan pada terminal untuk hasil semua testing
+
+![tampilan-pada-terminal-untuk-hasil-semua-testing](./screenshots/01_Tampilan%20terminal%20hasil%20semua%20testing.png)
+
+#### Tampilan pada web untuk hasil semua testing
+
+![tampilan-pada-web-untuk-hasil-semua-testing](./screenshots/02_Tampilan%20pada%20web%20untuk%20hasil%20semua%20testing.png)
