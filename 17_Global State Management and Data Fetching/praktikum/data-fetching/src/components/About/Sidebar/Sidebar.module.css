@@ -1,0 +1,11 @@
+.link {
+	color: var(--sidebar-link-about-color);
+}
+
+.menu a:hover {
+	color: var(--sidebar-link-about-hover-color);
+}
+
+.menu .active {
+	color: var(--sidebar-link-about-active-color);
+}
