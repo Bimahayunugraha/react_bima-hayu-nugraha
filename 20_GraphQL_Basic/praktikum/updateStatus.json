@@ -1,0 +1,16 @@
+"Comment: Mutation for Update if Have Value False to True"
+
+mutation UpdateStatus($id: Int, $nilai: Int, $status: Boolean) {
+    update_kampus_merdeka_keterangan(where: {id: {_eq: $id}}, _set: {nilai: $nilai, status: $status}) {
+        returning {
+            id
+            id_anggota
+            anggotum {
+                nama
+            }
+            pelajaran
+            nilai
+            status
+        }
+    }
+}

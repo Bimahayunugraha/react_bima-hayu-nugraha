@@ -1,0 +1,14 @@
+"Comment: Query for Get Status Where Status is True"
+
+query GetStatusTrue {
+    kampus_merdeka_anggota(where: {keterangans: {status: {_eq: true}}}) {
+        id
+        nama
+        keterangans(where: {status: {_eq: true}}) {
+            pelajaran
+            nilai
+            status
+        }
+    }
+}
+
