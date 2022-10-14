@@ -68,3 +68,98 @@ _**Apollo client**_ adalah _state management library_ komprehensif untuk _Javasc
 #### Setup Instalasi Apollo Client pada React
 
 Untuk menginstall _GraphQL_ dan _apollo client_ dapat menggunakan perintah `npm install @apollo/client graphql`.
+
+## Task
+
+### 1. Membuat database, tabel, melakukan query dan mutation di Hasura
+
+Pada tugas ini yaitu:
+
+#### 1. Masuk ke Hasura dan membuat sebuah database bernama kampus_merdeka.
+
+#### 2. Membuat tabel anggota yang berisikan id (primary key dan auto increment) dan nama.
+
+#### 3. Membuat tabel keterangan yang berisikan id (primary key dan auto increment), id_anggota, pelajaran, nilai, dan status (boolean).
+
+#### Memasukkan 3 buah data pada tabel anggota seperti di bawah ini:
+
+| id  | nama  |
+| --- | ----- |
+| 1   | Budi  |
+| 2   | Sita  |
+| 3   | Angga |
+
+Berikut untuk tampilan dari tabel anggota yang sudah saya buat:
+
+![tabel-anggota](./screenshots/01_Tabel%20Anggota.png)
+
+#### Memasukkan data pada tabel keterangan seperti di bawah ini:
+
+| id  | id_anggota | pelajaran        | nilai | status |
+| --- | ---------- | ---------------- | ----- | ------ |
+| 1   | 1          | Sistem informasi | 85    | true   |
+| 2   | 1          | React            | 65    | false  |
+| 3   | 2          | Sistem informasi | 90    | true   |
+| 4   | 2          | React            | 50    | false  |
+
+Berikut untuk tampilan dari tabel keterangan yang sudah saya buat:
+
+![tabel-keterangan](./screenshots/02_Tabel%20Keterangan.png)
+
+#### Melakukan query untuk memanggil hanya siswa yang memiliki status true
+
+Berikut untuk _source code_ dari query untuk memanggil hanya siswa yang memiliki status true:
+
+[source-code](./praktikum/getStatusTrue.json)
+
+Berikut untuk tampilan dari query untuk memanggil hanya siswa yang memiliki status true:
+
+![query-get-status-true](./screenshots/03_Query%20Get%20Status%20True.png)
+
+#### Melakukan insert pada tabel keterangan untuk anggota bernama angga dengan menggunakan mutation, sehingga memiliki data seperti di bawah ini:
+
+| id  | id_anggota | pelajaran        | nilai | status |
+| --- | ---------- | ---------------- | ----- | ------ |
+| 5   | 3          | Sistem informasi | 90    | true   |
+| 6   | 3          | React            | 55    | false  |
+
+Berikut untuk _source code_ dari mutation untuk insert pada tabel keterangan dengan anggota bernama angga:
+
+[source-code](./praktikum/insertData.json)
+
+Berikut untuk tampilan dari mutation untuk insert pada tabel keterangan dengan anggota bernama angga:
+
+![mutation-insert-data-1](<./screenshots/04_Mutation%20Untuk%20Insert%20Keterangan%20Kepada%20Angga%20(Pelajaran%20Sistem%20informasi).png>)
+
+![mutation-insert-data-2](<./screenshots/05_Mutation%20Untuk%20Insert%20Keterangan%20Kepada%20Angga%20(Pelajaran%20React).png>)
+
+Berikut untuk tampilan dari tabel keterangan setelah insert data baru:
+
+![tabel-keterangan-baru](./screenshots/06_Tabel%20Keterangan%20Setelah%20Insert%20Data%20Baru.png)
+
+#### Melakukan update terhadap data yang memiliki nilai false ke true menggunakan mutation:
+
+| id  | id_anggota | pelajaran        | nilai | status |
+| --- | ---------- | ---------------- | ----- | ------ |
+| 5   | 3          | Sistem informasi | 90    | true   |
+| 6   | 3          | React            | 55    | false  |
+
+Berikut untuk _source code_ dari mutation untuk melakukan update terhadap data yang memiliki nilai false ke true:
+
+[source-code](./praktikum/updateStatus.json)
+
+Berikut untuk tampilan dari mutation untuk melakukan update terhadap data yang memiliki nilai false ke true:
+
+![mutation-update-data-1](<./screenshots/07_Update%20Yang%20Memiliki%20Nilai%20False%20ke%20True%20(1).png>)
+
+![mutation-update-data-2](<./screenshots/08_Update%20Yang%20Memiliki%20Nilai%20False%20ke%20True%20(2).png>)
+
+![mutation-update-data-3](<./screenshots/09_Update%20Yang%20Memiliki%20Nilai%20False%20ke%20True%20(3).png>)
+
+Berikut untuk tampilan dari tabel keterangan setelah dilakukan update:
+
+![tabel-keterangan-setelah-diupdate](./screenshots/10_Tabel%20Keterangan%20Setelah%20Diupdate.png)
+
+#### Untuk soal lebih lengkap dari praktikum materi GraphQL - Basic adalah sebagai berikut:
+
+[Soal Praktikum Materi GrapQL - Basic](https://docs.google.com/document/d/1JFNrbzTj03DPHLANU_SXRf6eg5ENRC8g9V37WRlW9Tw/edit?usp=sharing)
