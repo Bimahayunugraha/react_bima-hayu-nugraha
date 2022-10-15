@@ -1,16 +1,56 @@
-"Comment: Mutation for Update if Have Value False to True"
-
-mutation UpdateStatus($id: Int, $nilai: Int, $status: Boolean) {
-    update_kampus_merdeka_keterangan(where: {id: {_eq: $id}}, _set: {nilai: $nilai, status: $status}) {
-        returning {
-            id
-            id_anggota
-            anggotum {
-                nama
-            }
-            pelajaran
-            nilai
-            status
-        }
-    }
-}
+[
+	{
+		"data": {
+			"update_kampus_merdeka_keterangan": {
+				"returning": [
+					{
+						"id": 2,
+						"id_anggota": 1,
+						"anggotum": {
+							"nama": "Budi"
+						},
+						"pelajaran": "React",
+						"nilai": 85,
+						"status": true
+					}
+				]
+			}
+		}
+	},
+	{
+		"data": {
+			"update_kampus_merdeka_keterangan": {
+				"returning": [
+					{
+						"id": 4,
+						"id_anggota": 2,
+						"anggotum": {
+							"nama": "Sita"
+						},
+						"pelajaran": "React",
+						"nilai": 90,
+						"status": true
+					}
+				]
+			}
+		}
+	},
+	{
+		"data": {
+			"update_kampus_merdeka_keterangan": {
+				"returning": [
+					{
+						"id": 6,
+						"id_anggota": 3,
+						"anggotum": {
+							"nama": "Angga"
+						},
+						"pelajaran": "React",
+						"nilai": 90,
+						"status": true
+					}
+				]
+			}
+		}
+	}
+]
