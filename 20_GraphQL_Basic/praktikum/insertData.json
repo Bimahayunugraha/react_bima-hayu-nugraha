@@ -1,0 +1,27 @@
+[
+	"Comment: Insert Data Angga Pelajaran Sistem Informasi",
+	{
+		"data": {
+			"insert_kampus_merdeka_keterangan_one": {
+				"id": 5,
+				"id_anggota": 3,
+				"pelajaran": "Sistem informasi",
+				"nilai": 90,
+				"status": true
+			}
+		}
+	},
+
+	"Comment: Insert Data Angga Pelajaran React",
+	{
+		"data": {
+			"insert_kampus_merdeka_keterangan_one": {
+				"id": 6,
+				"id_anggota": 3,
+				"pelajaran": "React",
+				"nilai": 55,
+				"status": false
+			}
+		}
+	}
+]

@@ -1,0 +1,28 @@
+{
+	"data": {
+		"kampus_merdeka_anggota": [
+			{
+				"id": 1,
+				"nama": "Budi",
+				"keterangans": [
+					{
+						"pelajaran": "Sistem informasi",
+						"nilai": 85,
+						"status": true
+					}
+				]
+			},
+			{
+				"id": 2,
+				"nama": "Sita",
+				"keterangans": [
+					{
+						"pelajaran": "Sistem informasi",
+						"nilai": 90,
+						"status": true
+					}
+				]
+			}
+		]
+	}
+}

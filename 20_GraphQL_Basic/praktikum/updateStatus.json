@@ -1,0 +1,56 @@
+[
+	{
+		"data": {
+			"update_kampus_merdeka_keterangan": {
+				"returning": [
+					{
+						"id": 2,
+						"id_anggota": 1,
+						"anggotum": {
+							"nama": "Budi"
+						},
+						"pelajaran": "React",
+						"nilai": 85,
+						"status": true
+					}
+				]
+			}
+		}
+	},
+	{
+		"data": {
+			"update_kampus_merdeka_keterangan": {
+				"returning": [
+					{
+						"id": 4,
+						"id_anggota": 2,
+						"anggotum": {
+							"nama": "Sita"
+						},
+						"pelajaran": "React",
+						"nilai": 90,
+						"status": true
+					}
+				]
+			}
+		}
+	},
+	{
+		"data": {
+			"update_kampus_merdeka_keterangan": {
+				"returning": [
+					{
+						"id": 6,
+						"id_anggota": 3,
+						"anggotum": {
+							"nama": "Angga"
+						},
+						"pelajaran": "React",
+						"nilai": 90,
+						"status": true
+					}
+				]
+			}
+		}
+	}
+]
