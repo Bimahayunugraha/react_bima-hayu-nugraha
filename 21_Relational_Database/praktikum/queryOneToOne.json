@@ -1,0 +1,24 @@
+{
+	"data": {
+		"kampus_merdeka_keterangan": [
+			{
+				"id_anggota": 1,
+				"anggotum": {
+					"nama": "Budi"
+				}
+			},
+			{
+				"id_anggota": 2,
+				"anggotum": {
+					"nama": "Sita"
+				}
+			},
+			{
+				"id_anggota": 3,
+				"anggotum": {
+					"nama": "Angga"
+				}
+			}
+		]
+	}
+}
