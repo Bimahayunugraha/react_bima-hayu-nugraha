@@ -188,3 +188,77 @@ const SubscriptionTodo = gql`
 
 const { data, loading, error } = useSubscription(SubscriptionTodo);
 ```
+
+## Task
+
+### Menghubungkan project React dengan GraphQL, kemudian membuat Query untuk get all data dan get data by id
+
+Pada tugas ini yaitu menghubungkan project React yang disediakan dengan GraphQL. Untuk soal dan hasil jawabannya adalah sebagai berikut:
+
+#### 1. Menghubungkan project React yang disediakan dengan GraphQL.
+
+Berikut untuk project react yang digunakan:
+
+[Project React](https://github.com/muhammad-muchson/GrapQL_Query_task_starter)
+
+Berikut untuk tampilan dari _database_ yang telah dibuat menggunakan hasura:
+
+![database](./screenshots/06_Database%20tabel%20passenger.png)
+
+#### 2. Melakukan query dari database yang dibuat. Sehingga, ketika aplikasi pertama kali dibuka akan langsung melakukan fetch semua data dan menampilkannya.
+
+Berikut untuk _source code_ dari query untuk get all data passenger:
+
+[Source Code Contants](./praktikum/src/utils/contants.js)
+
+[Source Code Apollo Client](./praktikum/src/graphql/index.js)
+
+[Source Code Apollo Provider](./praktikum/src/App.js)
+
+[Source Code Query Get All Passengers](./praktikum/src/graphql/gql.js)
+
+[Source Code Display All Data Passengers](./praktikum/src/component/ListPassenger.js)
+
+[Source Code Loading](./praktikum/src/component/Loading/Loading.js)
+
+Berikut untuk tampilan saat _loading_ fetch all data passengers:
+
+![loading-fetch-all-passengers](./screenshots/01_Loading%20query%20fetch%20all%20passenger.png)
+
+Berikut untuk tampilan saat berhasil get all data passengers:
+
+![display-get-all-passengers](./screenshots/02_Query%20get%20all%20passenger.png)
+
+#### 3. Membuat fitur melakukan query berdasarkan inputan dari user, sehingga dapat menampilkan data sesuai dengan input berdasarkan id.
+
+Berikut untuk _source code_ dari query untuk get data passenger by id:
+
+[Source Code Contants](./praktikum/src/utils/contants.js)
+
+[Source Code Apollo Client](./praktikum/src/graphql/index.js)
+
+[Source Code Apollo Provider](./praktikum/src/App.js)
+
+[Source Code Query Get Passenger By Id](./praktikum/src/graphql/gql.js)
+
+[Source Code Display Passengers By Id](./praktikum/src/component/ListPassengerById.js)
+
+[Source Code Loading](./praktikum/src/component/Loading/Loading.js)
+
+Berikut untuk tampilan saat _loading_ fetch data passenger by id:
+
+![loading-fetch-passenger-by-id](./screenshots/03_Loading%20query%20fetch%20passenger%20by%20id.png)
+
+Berikut untuk tampilan saat berhasil get data passengers by id:
+
+![display-fetch-passenger-by-id](./screenshots/04_Query%20get%20passenger%20by%20id.png)
+
+#### Tampilan full website
+
+Berikut untuk tampilan full websitenya:
+
+![full-website](./screenshots/05_Tampilan%20full%20website.png)
+
+#### Untuk soal lebih lengkap dari praktikum materi GraphQL - Query and Apollo Client adalah sebagai berikut:
+
+[Soal Praktikum Materi GraphQL - Query and Apollo Client](https://docs.google.com/document/d/1adlkVrgw52__qGZdXFAJoCuCCA0xCq8tSyArmNAjeOY/edit?usp=sharing)
