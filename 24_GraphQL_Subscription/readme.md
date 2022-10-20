@@ -114,3 +114,26 @@ function TodoList() {
 	}, []);
 }
 ```
+
+## Task
+
+### Membuat subscription menggunakan project React yang telah di pakai sebelumnya
+
+Pada tugas ini yaitu membuat subscription menggunakan project React yang telah di pakai sebelumnya yaitu project passenger.
+
+Berikut adalah _source code_ dari implementasi subscription:
+
+[Source Code Contants Create URL For Web Socket](./praktikum/src/utils/contants.js)
+
+[Source Code Initialize GraphQL Web Socket](./praktikum/src/graphql/index.js)
+
+[Source Code GraphQL Subsciption](./praktikum/src/graphql/gql.js)
+
+[Source Code Display Data with Subsciption](./praktikum/src/component/ListPassenger.js)
+
+Berikut adalah tampilan saat berhasil get data dengan Subscription dan Web Socket:
+![subscription-and-web-socket](./screenshots/Tampilan%20berhasil%20get%20data%20dengan%20Subscription%20dan%20Web%20Scoket.png)
+
+#### Untuk soal lebih lengkap dari praktikum materi GraphQL - Subscription adalah sebagai berikut:
+
+[Soal Praktikum Materi GraphQL - Subscription](https://docs.google.com/document/d/1gw4hP-DPt5Um9LyaZ_5OIo2Od8he0t43Aj576_xHFOs/edit?usp=sharing)
