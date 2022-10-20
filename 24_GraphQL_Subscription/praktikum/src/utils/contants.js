@@ -1,0 +1,7 @@
+const CONST = {
+	BASE_URL_GRAPHQL_API: process.env.REACT_APP_BASE_URL_GRAPHQL_API,
+	BASE_URL_GRAPHQL_WS: process.env.REACT_APP_BASE_URL_WS,
+	API_KEY: process.env.REACT_APP_API_KEY,
+};
+
+export default CONST;
