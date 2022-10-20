@@ -111,3 +111,63 @@ const onDeleteItem = (idx) => {
 	deleteTodo({ variables: { id: idx } });
 };
 ```
+
+## Task
+
+### Membuat mutation menggunakan project React pada Praktikum GraphQL - Query
+
+Pada tugas ini yaitu membuat mutation menggunakan project React pada Praktikum GraphQL - Query yaitu project passenger. Untuk soal dan hasil jawabannya adalah sebagai berikut:
+
+#### 1. Membuat fitur submit data
+
+Berikut adalah _source code_ dari mutation untuk insert data:
+
+[Source Code Mutation Insert Data](./praktikum/src/graphql/gql.js)
+
+[Source Code Feature Input Data](./praktikum/src/component/PassengerInput.js)
+
+Berikut adalah tampilan saat ingin insert data:
+
+![insert-data](./screenshots/01_Saat%20insert%20data.png)
+
+Berikut adalah tampilan saat berhasil insert data:
+
+![berhasil-insert-data](./screenshots/02_Berhasil%20insert%20data.png)
+
+#### 2. Membuat fitur delete data
+
+Berikut adalah _source code_ dari mutation untuk delete data:
+
+[Source Code Mutation Delete Data](./praktikum/src/graphql/gql.js)
+
+[Source Code Feature Delete Data](./praktikum/src/component/ListItem.js)
+
+Berikut adalah tampilan saat ingin delete data:
+
+![delete-data](./screenshots/05_Saat%20delete%20data.png)
+
+Berikut adalah tampilan saat berhasil delete data:
+
+![berhasil-delete-data](./screenshots/06_Berhasil%20delete%20data.png)
+
+#### 3. Membuat fitur edit atau update data.
+
+Berikut adalah _source code_ dari mutation untuk update data:
+
+[Source Code Mutation Update Data](./praktikum/src/graphql/gql.js)
+
+[Source Code Feature Update Data](./praktikum/src/component/ListItem.js)
+
+[Source Code Modal Update Data](./praktikum/src/component/UpdateModal.js)
+
+Berikut adalah tampilan saat ingin update data:
+
+![update-data](./screenshots/03_Saat%20update%20data.png)
+
+Berikut adalah tampilan saat berhasil update data:
+
+![berhasil-update-data](./screenshots/04_Berhasil%20update%20data.png)
+
+#### Untuk soal lebih lengkap dari praktikum materi GraphQL - Mutation adalah sebagai berikut:
+
+[Soal Praktikum Materi GraphQL - Mutation](https://docs.google.com/document/d/1QB3Yc5irk_zeIYZo5rxR6CGnMXGiICTujlyaWuZ7xqc/edit?usp=sharing)
