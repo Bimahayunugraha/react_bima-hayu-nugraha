@@ -31,12 +31,12 @@ const Navbar = () => {
 			<nav className={scroll ? `navbar navbar-expand-lg fixed-top nav-container active` : `navbar navbar-expand-lg fixed-top mb-3 nav-container`}>
 				<div className="container mx-auto">
 					<div className="nav-logo">
-						<a className="navbar-brand d-flex align-items-center justify-content-center" href="#home">
+						<Link className="navbar-brand d-flex align-items-center justify-content-center" to="/">
 							<img src={logo} alt="logo" />
 							<h3 className="my-auto ps-3">
 								<span>GoDev</span>
 							</h3>
-						</a>
+						</Link>
 					</div>
 					<button
 						className="navbar-toggler"
