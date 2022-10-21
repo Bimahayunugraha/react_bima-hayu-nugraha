@@ -6,25 +6,37 @@ const ToTop = () => {
 	const scroll = useSelector((state) => state.scroll);
 	const dispatch = useDispatch();
 
+	const handleScrollToTop = () => {
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	};
+
+	const handleScrollVisibility = () => {
+		if (window.scrollY > 200) {
+			dispatch(scrolling(true));
+		} else {
+			dispatch(scrolling(false));
+		}
+	};
+
 	useEffect(() => {
-		window.addEventListener("scroll", () => {
-			if (window.scrollY > 200) {
-				dispatch(scrolling(true));
-			} else {
-				dispatch(scrolling(false));
-			}
-		});
-	}, [dispatch]);
+		window.addEventListener("scroll", handleScrollVisibility);
+
+		return () => {
+			window.removeEventListener("scroll", handleScrollVisibility);
+		};
+	});
 
 	return (
 		<div>
-			<a
-				href="#hero"
+			<button
+				onClick={handleScrollToTop}
 				className={
-					scroll ? `back-to-top d-flex align-items-center justify-content-center active` : `back-to-top d-flex align-items-center justify-content-center`
+					scroll
+						? `back-to-top d-flex align-items-center justify-content-center border border-0 active`
+						: `back-to-top d-flex align-items-center justify-content-center border border-0`
 				}>
 				<i className="bi bi-arrow-up-short"></i>
-			</a>
+			</button>
 		</div>
 	);
 };
