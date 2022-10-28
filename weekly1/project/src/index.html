@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Weekly Task 1 - GoDev</title>
+		<!-- Website Icon -->
+		<link rel="icon" href="/assets/img/ico/icon-web.ico" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous" />
+
+		<!-- Bootstrap Icon -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+		<!-- My CSS -->
+		<link rel="stylesheet" href="/assets/css/styles.css" />
+	</head>
+
+	<body id="home">
+		<!-- Navbar Goes Here -->
+		<header>
+			<nav class="navbar navbar-expand-lg fixed-top mb-3 nav-container">
+				<div class="container mx-auto">
+					<div class="nav-logo">
+						<a class="navbar-brand d-flex align-items-center justify-content-center" href="#home">
+							<img src="/assets/img/svg/logo.svg" alt="logo" />
+							<h3 class="my-auto ps-3">
+								<span>GoDev</span>
+							</h3>
+						</a>
+					</div>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse nav-list-container" id="navbarNavDropdown">
+						<ul class="navbar-nav nav-list ms-auto">
+							<li class="nav-item">
+								<a class="nav-link px-4" href="#hero"> Home </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link px-4" href="#contact"> Contact </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- Navbar End -->
+
+		<!-- Main Goes Here -->
+		<main>
+			<!-- Hero Section Start -->
+			<section id="hero" class="hero">
+				<div class="hero-container d-flex align-items-center">
+					<div class="container mx-auto hero-content">
+						<div class="row">
+							<div class="col-lg-6 d-flex flex-column justify-content-center">
+								<h1>We offer modern solutions for growing your business</h1>
+								<h2>We are a team of developers who build a front-end website with a bootstrap framework</h2>
+								<div>
+									<div class="text-center text-lg-start">
+										<a href="#hero" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+											<span>Get Started</span>
+											<i class="bi bi-arrow-right"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 hero-img">
+								<img src="/assets/img/png/hero-img.png" class="img-fluid" alt="hero-img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Hero Section End -->
+
+			<!-- Contact Us Section Start -->
+			<section id="contact" class="py-5">
+				<div class="contact">
+					<div class="container">
+						<div class="section-header">
+							<h2>Contact</h2>
+							<p>Contact Us</p>
+						</div>
+						<div class="row gy-4">
+							<div class="col-lg-6">
+								<div class="row gy-4">
+									<div class="col-md-6">
+										<div class="info-box">
+											<i class="bi bi-geo-alt"></i>
+											<h3>Address</h3>
+											<p>
+												Magetan,
+												<br />
+												Jawa Timur, 63396
+											</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="info-box">
+											<i class="bi bi-telephone"></i>
+											<h3>Call Us</h3>
+											<p>+62 82 902 902 902</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="info-box">
+											<i class="bi bi-envelope"></i>
+											<h3>Email Us</h3>
+											<p>godev@gmail.com</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="info-box">
+											<i class="bi bi-clock"></i>
+											<h3>Open Hours</h3>
+											<p>
+												Monday - Friday
+												<br />
+												9:00AM - 05:00PM
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<form onsubmit="handleSubmit(event)" id="contact-form" name="contact-form" class="contact-form">
+									<div class="row gy-4">
+										<div class="col-md-6">
+											<input type="text" id="firstName" name="firstName" class="form-control" placeholder="Your First Name" required />
+										</div>
+										<div class="col-md-6">
+											<input type="text" class="form-control" id="lastName" name="lastName" placeholder="Your Last Name" required />
+										</div>
+										<div class="col-md-12">
+											<input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required />
+										</div>
+										<div class="col-md-12">
+											<textarea class="form-control" id="message" name="message" rows="6" placeholder="Message"></textarea>
+										</div>
+										<div class="col-md-12 text-center">
+											<button type="submit">Send Message</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- <!-- Contact Us Section End -->
+		</main>
+		<!-- Main End -->
+
+		<!-- Footer Goes Here -->
+		<footer id="footer" class="footer pt-5">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row gy-4">
+						<div class="col-lg-5 col-md-12 footer-info">
+							<a href="index.html" class="logo d-flex align-items-center">
+								<img src="/assets//img//svg/logo.svg" alt="footer-logo" />
+								<span>GoDev</span>
+							</a>
+							<p>GoDev is a website that allows you to learn more about web programming especially in the front end developers.</p>
+							<div class="social-links mt-3">
+								<a href="https://api.whatsapp.com/send/?phone=087758524277&text&app_absent=0">
+									<i class="bi bi-whatsapp"></i>
+								</a>
+								<a href="https://www.instagram.com/bimahyunugraha/">
+									<i class="bi bi-instagram"></i>
+								</a>
+								<a href="https://t.me/BimaHayuNugraha">
+									<i class="bi bi-telegram"></i>
+								</a>
+								<a href="https://github.com/Bimahayunugraha">
+									<i class="bi bi-github"></i>
+								</a>
+							</div>
+						</div>
+
+						<div class="col-lg-2 col-6 footer-links">
+							<h4>Useful Links</h4>
+							<ul>
+								<li><a href="#hero">Home</a></li>
+								<li><a href="#hero">About us</a></li>
+								<li><a href="#hero">Services</a></li>
+								<li><a href="#hero">Terms of service</a></li>
+								<li><a href="#hero">Privacy policy</a></li>
+							</ul>
+						</div>
+
+						<div class="col-lg-2 col-6 footer-links">
+							<h4>Our Services</h4>
+							<ul>
+								<li><a href="#hero">Web Design</a></li>
+								<li><a href="#hero">Web Development</a></li>
+								<li><a href="#hero">Management</a></li>
+								<li><a href="#hero">Marketing</a></li>
+								<li><a href="#hero">Graphic Design</a></li>
+							</ul>
+						</div>
+
+						<div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+							<h4>Contact Us</h4>
+							<p>
+								Magetan <br />
+								Jawa Timur, 63396
+								<br />
+								<strong>Phone:</strong> +62 82 902 902 902
+								<br />
+								<strong>Email:</strong> godev@gmiail.com
+								<br />
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="copyright">
+					<p class="fw-bold d-flex justify-content-center">Created with <i class="bi bi-heart-fill text-danger ms-2 created"></i></p>
+					&copy; Copyright
+					<strong>
+						<span> GoDev. </span>
+					</strong>
+					All Rights Reserved
+				</div>
+				<div class="credits">
+					Designed by Bima Hayu Nugraha made with
+					<a class="text-decoration-none" href="https://getbootstrap.com/"> Bootstrap </a>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer End -->
+
+		<!-- Scrolling To Top Goes Here -->
+		<section class="scroll">
+			<div>
+				<a href="#hero" class="back-to-top d-flex align-items-center justify-content-center">
+					<i class="bi bi-arrow-up-short"></i>
+				</a>
+			</div>
+		</section>
+		<!-- Scrolling To Top End -->
+
+		<!-- Bootstrap JS -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"></script>
+
+		<!-- My JS -->
+		<script src="/assets/js/scripts.js"></script>
+	</body>
+</html>
